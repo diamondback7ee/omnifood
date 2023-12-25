@@ -120,6 +120,14 @@ body {
   letter-spacing: 0.75px;
 }
 
+.margin-bottom-md {
+  margin-bottom: 3rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
 strong {
   font-weight: 500;
 }
