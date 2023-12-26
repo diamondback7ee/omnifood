@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-import "../App.css";
 import styles from "./Hero.module.css";
+import "../App.css";
 
 function Hero() {
   return (
@@ -17,13 +16,10 @@ function Hero() {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <Link
-            to={"/"}
-            className={`${styles.btn} ${styles["btn--full"]} ${styles["margin-right-sm"]}`}
-          >
+          <Link to={"/"} className="btn btn--full margin-right-sm">
             Start eating well
           </Link>
-          <Link to={"/"} className={`${styles.btn} ${styles["btn--outline"]}`}>
+          <Link to={"/"} className={`btn ${styles["btn--outline"]}`}>
             Learn more &darr;{" "}
           </Link>
           <div className={styles["delivered-meals"]}>

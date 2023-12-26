@@ -6,6 +6,7 @@ import HowItWorks from "../components/HowItWorks";
 import FeaturedIn from "../components/FeaturedIn";
 import Meals from "../components/Meals";
 import Testimonials from "../components/Testimonials";
+import Pricing from "../components/Pricing";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <HowItWorks />
         <Meals />
         <Testimonials />
+        <Pricing />
       </main>
     </>
   );
