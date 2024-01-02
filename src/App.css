@@ -49,6 +49,11 @@ Default: 9px
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -56,6 +61,7 @@ body {
   color: #555;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -64,6 +70,9 @@ body {
   padding: 1rem 2rem;
   border-radius: 9px;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* Put transition on original "state" */
   transition: all 300ms;
@@ -80,6 +89,18 @@ body {
   background-color: #cf711f;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 0.75rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .container {
   max-width: 75rem;
   padding: 0 2rem;
@@ -92,6 +113,10 @@ body {
   row-gap: 6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -101,7 +126,7 @@ body {
 }
 
 .grid--4-cols {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-vertical {
@@ -144,10 +169,6 @@ body {
   letter-spacing: 0.75px;
 }
 
-.margin-bottom-md {
-  margin-bottom: 3rem;
-}
-
 .center-text {
   text-align: center;
 }
@@ -177,6 +198,10 @@ ion-icon {
 
 .margin-right-sm {
   margin-right: 1rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3rem !important;
 }
 
 strong {
