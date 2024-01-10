@@ -8,6 +8,7 @@ import Meals from "../components/Meals";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import CallToAction from "../components/CallToAction";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         <Pricing />
         <CallToAction />
       </main>
+      <Footer />
     </>
   );
 }

@@ -1,14 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
 function Header() {
   return (
     <header className={styles.header}>
-      <img
-        className={styles.logo}
-        src="img/omnifood-logo.png"
-        alt="Omnifood logo"
-      />
+      <Link to={"#"}>
+        <img className="logo" src="img/omnifood-logo.png" alt="Omnifood logo" />
+      </Link>
+
       <nav className={styles["main-nav"]}>
         <ul className={styles["main-nav-list"]}>
           <li>

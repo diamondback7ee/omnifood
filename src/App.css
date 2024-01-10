@@ -129,6 +129,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-vertical {
   align-items: center;
 }
@@ -194,6 +198,10 @@ ion-icon {
 
 .list-item ion-icon {
   font-size: 1.875rem;
+}
+
+.logo {
+  height: 1.25rem;
 }
 
 .margin-right-sm {
